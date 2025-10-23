@@ -1,0 +1,72 @@
+/* Impostazioni di base per la lavagna */
+body {
+  font-family: "Indie Flower", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: lightgray;
+  margin: 0;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: darkgray;
+}
+
+.postit {
+  background-color: #fff;
+  padding: 20px;
+  width: 200px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.postit h3 {
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.postit p {
+  margin: 10px 0 0;
+  font-size: 1em;
+}
+
+.giallo {
+  background-color: #fef1a3;
+  transform: rotate(-10deg);
+}
+
+.verde {
+  background-color: #c1f0a4;
+  transform: rotate(10deg);
+}
+
+.viola {
+  background-color: #d8a7f5;
+  transform: rotate(-10deg);
+}
+
+.postit:hover {
+  transform: translateY(-10px);
+  background-color: #f0e0a5;
+}
+
+.postit.giallo:hover {
+  background-color: #f9e03b;
+}
+
+.postit.verde:hover {
+  background-color: #99d2b1;
+}
+
+.postit.viola:hover {
+  background-color: #d299f4;
+}
